@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="429dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/search"
+                    android:layout_width="175dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ripple_sample"
+                    android:onClick="search"
+                    android:src="@drawable/search" />
+
+                <ImageButton
+                    android:id="@+id/translate"
+                    android:layout_width="175dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:src="@drawable/ce"
+                    android:onClick="translate"
+                    android:text="翻譯" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <ImageButton
+                    android:id="@+id/history"
+                    android:layout_width="175dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#00000000"
+                    android:src="@drawable/history"
+                    android:onClick="favority"
+                    android:text="我的收藏" />
+
+                <ImageButton
+                    android:id="@+id/change"
+                    android:layout_width= "175dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#00000000"
+                    android:src="@drawable/jf"
+                    android:onClick="change"
+                    android:text="簡轉繁"/>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
